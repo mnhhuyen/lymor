@@ -1,0 +1,79 @@
+[
+    {
+        "id": 1,
+        "name": "DCBTCC83",
+        "price": 4717000,
+        "description": "Dây chuyền Vàng 14K Ngọc trai",
+        "images": [
+            "/media/image/new-1.png"
+        ],
+        "sold": 3,
+        "upload_date": "24/03/2025"
+    },
+    {
+        "id": 2,
+        "name": "DCBTCC83",
+        "price": 4717000,
+        "description": "Dây chuyền Vàng 14K Ngọc trai",
+        "images": [
+            "/media/image/new-2.png"
+        ],
+        "sold": 3,
+        "upload_date": "24/03/2025"
+    },
+    {
+        "id": 3,
+        "name": "DCBTCC83",
+        "price": 4717000,
+        "description": "Dây chuyền Vàng 14K Ngọc trai",
+        "images": [
+            "/media/image/new-3.png"
+        ],
+        "sold": 3,
+        "upload_date": "24/03/2025"
+    },
+    {
+        "id": 4,
+        "name": "DCBTCC83",
+        "price": 4717000,
+        "description": "Dây chuyền Vàng 14K Ngọc trai",
+        "images": [
+            "/media/image/bestseller-1.png"
+        ],
+        "sold": 10,
+        "upload_date": "22/03/2025"
+    },
+    {
+        "id": 5,
+        "name": "DCBTCC83",
+        "price": 4717000,
+        "description": "Dây chuyền Vàng 14K Ngọc trai",
+        "images": [
+            "/media/image/bestseller-2.png"
+        ],
+        "sold": 9,
+        "upload_date": "22/03/2025"
+    },
+    {
+        "id": 6,
+        "name": "DCBTCC83",
+        "price": 4717000,
+        "description": "Dây chuyền Vàng 14K Ngọc trai",
+        "images": [
+            "/media/image/bestseller-3.png"
+        ],
+        "sold": 8,
+        "upload_date": "22/03/2025"
+    },
+    {
+        "id": 7,
+        "name": "DCBTCC83",
+        "price": 4717000,
+        "description": "Dây chuyền Vàng 14K Ngọc trai",
+        "images": [
+            "/media/image/bestseller-4.png"
+        ],
+        "sold": 7,
+        "upload_date": "22/03/2025"
+    }
+]

@@ -1,0 +1,52 @@
+/* Footer.css */
+
+body {
+    font-family: Lora, sans-serif;
+}
+
+.footer {
+    background: linear-gradient(to bottom, #ffffff, #e0f5f2);
+    padding: 20px;
+    border-top: 5px solid #6BC9BC;
+    padding-top: 10vh;
+}
+
+.footer .footer-content {
+    margin-left: 20px;
+    margin-right: 40px;
+    max-width: 1200px;
+}
+
+.footer h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer .social-icons a {
+    margin-right: 18px;
+    margin-top: 10px;
+}
+
+/* .footer .social-icons i {
+    font-size: 1.5rem;
+} */
+
+.footer .email-signup input {
+    border: none;
+    border-bottom: 1px solid #000000;
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.footer .email-signup button {
+    border: 1px solid #000000;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.footer .email-signup button:hover {
+    background-color: #f0f0f0;
+}

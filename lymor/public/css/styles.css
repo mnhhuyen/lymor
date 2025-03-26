@@ -1,0 +1,186 @@
+.text-logo {
+    color: #35746D
+}
+
+.contact-info {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.contact-info .phone,
+.contact-info .email {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-info .icon {
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 5vh;
+}
+
+.contact-info p {
+    font-size: 11px;
+    margin: 5px 10px;
+}
+
+.contact-info .bold-info {
+    font-size: 18px;
+    /* font-weight: 500; */
+}
+
+.footer-image {
+    height: 70%;
+}
+
+.category-content {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.bestseller-title,
+.new-title,
+.category-title {
+    font-size: 25px;
+    margin: 20px 0;
+    font-weight: 500;
+}
+
+.bestseller-content,
+.new-content {
+    width: 84vw;
+}
+
+.bestseller-product,
+.new-product {
+    height: 80%;
+    margin: 0 3px;
+}
+
+.story-section {
+    margin-left: 100px;
+    /* margin-right: 20px; */
+    /* background-color: #35746D; */
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.story-section .left-section {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.story-section .left-section img {
+    width: 50px;
+    height: 50px;
+    margin: 10px 0;
+}
+
+.story-section .left-section h1 {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+.story-section .left-section p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.story-section .left-section button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.story-section .right-section {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.story-section .right-section img {
+    width: calc(33.33% - 10px);
+    height: auto;
+    border-radius: 10px;
+}
+
+.story-section .story-img {
+    width: 83vw;
+    height: auto;
+    border-radius: 10px;
+}
+
+.bestseller-info p,
+.new-info p {
+    padding-bottom: 5px;
+}
+
+.bestseller-info .bestseller-des,
+.new-info .new-des {
+    font-size: 13px;
+}
+
+.bestseller-info .bestseller-code,
+.new-info .new-code {
+    font-size: 11px;
+}
+
+.bestseller-info .bestseller-price,
+.new-info .new-price {
+    font-size: 15px;
+    color: #35746D;
+    font-weight: 500;
+}
+
+.header,
+.navbar {
+    width: 84vw;
+    justify-content: center;
+}
+
+.group-header {
+    background-color: #EFF6F4 ;
+}
+
+.main-banner{
+    margin-top: 15px;
+}
+
+.nav-text{
+    font-size: 10pt;
+}
+
+.header-logo{
+    height: 70px;
+    padding-bottom: 10px;
+}
+
+.contact-text {
+    font-size: 0.75rem;
+    /* margin-left: 6vw; */
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.header-main {
+    margin-left: 19vw;
+    margin-right: auto;
+}

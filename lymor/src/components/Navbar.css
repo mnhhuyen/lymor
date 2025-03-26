@@ -1,0 +1,20 @@
+/* Custom animated border for navbar links */
+.nav-link {
+    position: relative;
+    padding-bottom: 2px; /* Space for the border */
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #35746D; 
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::before {
+    width: 100%; 
+}
