@@ -20,7 +20,7 @@ function Shopnew() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-white">
+    <div className="flex flex-col items-center justify-center bg-white new-container">
       <button className="px-6 py-2 text-black text-lg mb-8">
         <span className="nav-link new-title">SẢN PHẨM MỚI</span>
       </button>

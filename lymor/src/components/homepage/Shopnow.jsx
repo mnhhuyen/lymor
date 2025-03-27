@@ -20,7 +20,7 @@ function Shopnow() {
     }, []);
 
     return (
-        <div className="flex flex-col items-center justify-center bg-white">
+        <div className="flex flex-col items-center justify-center bg-white bestseller-container">
             <button className="px-6 py-2 text-black text-lg mb-8">
                 <span className="nav-link bestseller-title">SẢN PHẨM BÁN CHẠY</span>
             </button>

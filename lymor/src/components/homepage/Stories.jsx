@@ -2,7 +2,7 @@ import React from "react";
 
 function Stories() {
     return (
-        <div className="container story-section">
+        <div className="container md: mt-24 story-section">
             {/* <div class="left-section">
                 <img alt="Pearl necklace" height="50" src="https://storage.googleapis.com/a1aa/image/1PqG3almcFBypRJBA7asFLmwxwhwKMckaG2tjvuqKu4.jpg" width="50" />
                 <img alt="Pearl necklace" height="50" src="https://storage.googleapis.com/a1aa/image/1PqG3almcFBypRJBA7asFLmwxwhwKMckaG2tjvuqKu4.jpg" width="50" />

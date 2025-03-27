@@ -5,7 +5,7 @@ import './Navbar.css';
 function Footer() {
     return (
         <div className="footer">
-            <div className="footer-content grid grid-cols-3 gap-4">
+            <div className="footer-content grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div className="contact-info">
                     <div className="flex phone">
                         <img className="icon" src="/media/image/phone-icon.svg" alt="Phone Icon" />

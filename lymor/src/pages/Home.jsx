@@ -53,7 +53,7 @@ function Home() {
 
             {/* video introduction*/}
 
-            <div className="mt-32"> {/* or use pt-16 on Vidintro itself */}
+            <div className="md:mt-32"> {/* or use pt-16 on Vidintro itself */}
                 <Vidintro />
             </div>
 
