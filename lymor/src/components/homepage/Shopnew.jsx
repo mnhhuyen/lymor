@@ -24,7 +24,7 @@ function Shopnew() {
       <button className="px-6 py-2 text-black text-lg mb-8">
         <span className="nav-link new-title">SẢN PHẨM MỚI</span>
       </button>
-      <div className="new-content flex space-x-4">
+      <div className="new-content flex space-x-2 lg:space-x-4">
         {products.map((product) => (
           <div key={product.id} className="new-item relative">
             <div className="new-product">

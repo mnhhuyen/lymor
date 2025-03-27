@@ -24,7 +24,7 @@ function Shopnow() {
             <button className="px-6 py-2 text-black text-lg mb-8">
                 <span className="nav-link bestseller-title">SẢN PHẨM BÁN CHẠY</span>
             </button>
-            <div className="bestseller-content flex space-x-4">
+            <div className="bestseller-content flex space-x-2 lg:space-x-4">
                 {products.map((product) => (
                     <div key={product.id} className="relative">
                         <div className="bestseller-product">
@@ -36,9 +36,9 @@ function Shopnow() {
                             {/* <div className="absolute top-2 left-2 bg-white px-2 py-1 text-sm font-semibold">
                                 SẢN PHẨM BÁN CHẠY   
                             </div> */}
-                            <div className="absolute top-2 right-4">
+                            {/* <div className="absolute top-2 right-4">
                                 <i className="far fa-heart"></i>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="text-center bestseller-info">
                             <p className="bestseller-des font-bold">{product.description}</p>
