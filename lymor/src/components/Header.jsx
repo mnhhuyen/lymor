@@ -11,8 +11,8 @@ function Header({ onSearchClick }) {
 
     return (
         <div className="header-container">
-            <div className="flex justify-between items-center pt-4 pl-4 pr-4 md:pb-4 header" style={{ fontFamily: 'Lora, Chivo, Arial, sans-serif' }}>
-                <div className="flex flex-wrap items-center text-gray-600 contact-text">
+            <div className="grid grid-cols-12 items-center pt-2 md:pt-4 pl-4 pr-4 md:pb-4 header" style={{ fontFamily: 'Lora, Chivo, Arial, sans-serif' }}>
+                <div className="col-span-3 flex flex-wrap items-center text-gray-600 contact-text">
                     <i className="fas fa-phone cursor-pointer"></i>
                     <span className="md:mx-2">028 1234 5678</span>
                     {/* Show divider on desktop, hide on mobile */}
@@ -23,11 +23,12 @@ function Header({ onSearchClick }) {
                     <span className="shop-address"> Cửa hàng</span>
                 </div>
 
-                <div className="flex items-center header-main">
+                <div className="col-span-6 flex items-center justify-center header-main">
                     <img src="media/image/logo.svg" alt="Logo" className="header-logo" />
                     <Link to="/" className="text-logo hover:text-gray-800 ml-2 font-bold">LYMOR</Link>
                 </div>
-                <div className="flex items-center space-x-4 text-gray-600 header-icons">
+
+                <div className="col-span-3 flex items-center justify-end space-x-4 text-gray-600 header-icons">
                     <i className="fas fa-search cursor-pointer" onClick={onSearchClick}></i>
                     <i className="fas fa-user"></i>
                     <i className="fas fa-shopping-cart"></i>

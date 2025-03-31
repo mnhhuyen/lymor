@@ -4,40 +4,26 @@ const dropdownData = {
     "VỀ CHÚNG TÔI": [],
     "BỘ SƯU TẬP": [
         {
-            title: "Shop by Category",
+            title: "Ngọc trai",
             links: [
-                { label: "Necklaces & Pendants", href: "#" },
-                { label: "Earrings", href: "#" },
-                { label: "Bracelets", href: "#" },
-                { label: "Rings", href: "#" },
-                { label: "Brooches", href: "#" },
-                { label: "Men's Jewelry", href: "#" },
+                { label: "Ngọc trai 1", href: "#" },
+                { label: "Ngọc trai 2", href: "#" },
             ],
         },
         {
-            title: "Featured Collections",
+            title: "Đá quý",
             links: [
-                { label: "Tiffany HardWear", href: "#" },
-                { label: "Tiffany Lock", href: "#" },
-                { label: "Tiffany T", href: "#" },
-                { label: "Paloma Picasso", href: "#" },
-                { label: "Elsa Peretti", href: "#" },
-            ],
-        },
-        {
-            title: "Curated Shops",
-            links: [
-                { label: "Icons", href: "#" },
-                { label: "New Jewelry", href: "#" },
-                { label: "Most Popular Jewelry", href: "#" },
-                { label: "Gold Jewelry", href: "#" },
-                { label: "Rose Gold Jewelry", href: "#" },
+                { label: "Đá quý 1", href: "#" },
+                { label: "Đá quý 2", href: "#" },
+                { label: "Đá quý 3", href: "#" },
+                { label: "Đá quý 4", href: "#" },
+                { label: "Đá quý 5", href: "#" },
             ],
         },
     ],
     "SẢN PHẨM": [
         {
-            title: "Collections",
+            title: "Nhẫn đá quý",
             links: [
                 { label: "Blue Book 2024: Tiffany Céleste", href: "#" },
                 { label: "Blue Book 2023: Out of the Blue", href: "#" },
@@ -45,7 +31,17 @@ const dropdownData = {
             ],
         },
         {
-            title: "Discover",
+            title: "Vòng tay",
+            links: [
+                { label: "The Tiffany Diamond", href: "#" },
+                { label: "Legendary Acquisitions", href: "#" },
+                { label: "Tiffany Diamonds", href: "#" },
+                { label: "Tiffany Colored Gemstones", href: "#" },
+                { label: "About Jean Schlumberger", href: "#" },
+            ],
+        },
+        {
+            title: "Dây chuyền",
             links: [
                 { label: "The Tiffany Diamond", href: "#" },
                 { label: "Legendary Acquisitions", href: "#" },
@@ -57,7 +53,7 @@ const dropdownData = {
     ],
     "DỊCH VỤ": [
         {
-            title: "Engagement",
+            title: "Tư vấn trang sức theo mệnh",
             links: [
                 { label: "Engagement Rings", href: "#" },
                 { label: "Men's Engagement Rings", href: "#" },
@@ -65,7 +61,7 @@ const dropdownData = {
             ],
         },
         {
-            title: "Wedding",
+            title: "Chính sách khách hàng thân thiết",
             links: [
                 { label: "Women's Wedding Bands", href: "#" },
                 { label: "Men's Wedding Bands", href: "#" },
@@ -75,7 +71,7 @@ const dropdownData = {
             ],
         },
         {
-            title: "The Tiffany Difference",
+            title: "Chính sách thu đổi",
             links: [
                 { label: "The Guide to Diamonds", href: "#" },
                 { label: "A Lifetime of Service", href: "#" },
@@ -86,7 +82,7 @@ const dropdownData = {
             ],
         },
         {
-            title: "Shop by Shape",
+            title: "Chính sách giao hàng",
             links: [
                 { label: "Round", href: "#" },
                 { label: "Oval", href: "#" },
@@ -97,7 +93,7 @@ const dropdownData = {
             ],
         },
         {
-            title: "Engagement Ring Collections",
+            title: "Chính sách bảo hành",
             links: [
                 { label: "The Tiffany® Setting", href: "#" },
                 { label: "Tiffany True®", href: "#" },

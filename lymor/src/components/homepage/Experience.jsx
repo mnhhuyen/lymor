@@ -4,7 +4,7 @@ import '../Navbar.css';
 
 function Experience() {
     return (
-        <div className="bg-white sm:py-8 md:py-16 experience-container">
+        <div className="bg-white sm:py-8 md:py-12 experience-container items-center justify-center">
             <div className="max-w-6xl mx-auto grid grid-cols-3 md:gap-8 text-center experience-content">
                 <div>
                     <i className="fas fa-box-open md:text-2xl mb-4"></i>

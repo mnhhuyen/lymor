@@ -44,7 +44,7 @@ function Navbar() {
         <div>
             <div className="relative w-full navbar" style={{ fontFamily: 'Lora, Chivo, Arial, sans-serif' }}>
                 {/* Main Navbar Links */}
-                <div className="hidden md:flex justify-center space-x-12 mt-2 mb-6">
+                <div className="hidden md:flex justify-center space-x-16 mb-6">
                     {Object.keys(dropdownData).map((key) => (
                         <div
                             key={key}
@@ -81,7 +81,7 @@ function Navbar() {
                     </div>
                 )}
             </div>
-            <div className="flex md:hidden justify-between items-center pr-4 pb-4 pl-4">
+            <div className="flex md:hidden justify-between items-center pr-4 pb-2 pl-4">
                 <button onClick={toggleMobileMenu}>
                     <i className="fas fa-bars"></i>
                 </button>
