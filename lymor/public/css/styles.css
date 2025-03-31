@@ -26,7 +26,7 @@ body {
 }
 
 .footer-image {
-    height: 70%;
+    height: 67%;
 }
 
 .category-content {
@@ -40,7 +40,7 @@ body {
 .new-container,
 .bestseller-container,
 .category-container{
-    margin-top: 10vh;
+    margin-top: 8vh;
 }
 
 .bestseller-title,
@@ -66,7 +66,7 @@ body {
 .story-container,
 .category-container {
     width: 83vw;
-    margin: 10vh auto;
+    margin: 8vh auto;
 }
 
 .story-section {
@@ -216,7 +216,6 @@ body {
 .footer .footer-content {
     margin-left: 20px;
     margin-right: 40px;
-    max-width: 1200px;
 }
 
 .footer h4 {
@@ -252,6 +251,9 @@ body {
 
 .footer .email-signup button:hover {
     background-color: #f0f0f0;
+}
+.footer .customer-service p{
+    font-size: 0.8rem;
 }
 
 .scrollbar-hide {
@@ -359,7 +361,7 @@ body {
     .story-container,
     .category-container {
         width: 88vw;
-        margin: 10vh auto;
+        margin: 8vh auto;
     }
 
     .new-container,

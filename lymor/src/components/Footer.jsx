@@ -5,7 +5,7 @@ import './Navbar.css';
 function Footer() {
     return (
         <div className="footer">
-            <div className="footer-content grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="footer-content grid grid-cols-1 md:grid-cols-4 gap-4">
                 <div className="contact-info">
                     <div className="flex phone">
                         <img className="icon" src="/media/image/phone-icon.svg" alt="Phone Icon" />
@@ -23,6 +23,24 @@ function Footer() {
                             <p>Tất cả các ngày trong tuần</p>
                         </div>
                     </div>
+                </div>
+                <div className="customer-service">
+                    <h4>Dịch vụ khách hàng</h4>
+                    <ul>
+                        <li>
+                            <a href="#" className="text-black text-sm nav-link">Hướng dẫn đo size trang sức</a>
+                        </li>
+                        <li>
+                            <a href="#" className="text-black text-sm nav-link">Hướng dẫn mua hàng và thanh toán</a>
+                        </li>
+                        <li>
+                            <a href="#" className="text-black text-sm nav-link">Cẩm nang sử dụng trang sức</a>
+                        </li>
+                        <li>
+                            <a href="#" className="text-black text-sm nav-link">Câu hỏi thường gặp</a>
+                        </li>
+
+                    </ul>
                 </div>
                 <div>
                     <h4>Cửa hàng</h4>
@@ -46,7 +64,7 @@ function Footer() {
             <div className="mt-4">
                 <p className="text-sm">Change Location: United States <i className="fas fa-caret-down"></i></p>
             </div>
-        </div>
+        </div >
     );
 }
 
