@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 
 function ShopByCate() {
   const items = [
-    { id: 1, img: "https://placehold.co/300x300", label: "Dây chuyền" },
-    { id: 2, img: "https://placehold.co/300x300", label: "Mặt dây chuyền" },
-    { id: 3, img: "https://placehold.co/300x300", label: "Khuyên tai" },
-    { id: 4, img: "https://placehold.co/300x300", label: "Lắc tay" },
-    { id: 5, img: "https://placehold.co/300x300", label: "Lắc chân" },
-    { id: 6, img: "https://placehold.co/300x300", label: "Nhẫn" },
+    { id: 1, img: "https://placehold.co/300x300", label: "Nhẫn" },
+    { id: 2, img: "https://placehold.co/300x300", label: "Dây chuyền" },
+    { id: 3, img: "https://placehold.co/300x300", label: "Mặt dây chuyền" },
+    { id: 4, img: "https://placehold.co/300x300", label: "Khuyên tai" },
+    { id: 5, img: "https://placehold.co/300x300", label: "Lắc tay" },
+    { id: 6, img: "https://placehold.co/300x300", label: "Lắc chân" },
   ];
 
   // startIndex indicates the leftmost visible item.

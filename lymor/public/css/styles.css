@@ -39,8 +39,7 @@ body {
 
 .new-container,
 .bestseller-container,
-.category-container,
-.story-container {
+.category-container{
     margin-top: 10vh;
 }
 
@@ -351,16 +350,28 @@ body {
         margin-top: 12vh;
     }
 
+    .bestseller-content,
+    .new-content,
+    .experience-content {
+        width: 89vw;
+    }
+
+    .story-container,
+    .category-container {
+        width: 88vw;
+        margin: 10vh auto;
+    }
+
     .new-container,
     .bestseller-container,
     .category-container {
-        margin-top: 5vh;
+        margin-top: 3vh;
     }
 
     .bestseller-title,
     .new-title,
     .category-title {
-        font-size: 15px;
+        font-size: 17px;
         margin: 20px 0;
         font-weight: 500;
     }
@@ -370,9 +381,10 @@ body {
         font-weight: 500;
         text-align: center;
     }
-    .item-label{
+
+    .item-label {
         font-size: 10px;
-    }    
+    }
 
     .bestseller-info .bestseller-des,
     .new-info .new-des {
