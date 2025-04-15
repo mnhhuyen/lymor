@@ -40,7 +40,7 @@ function Shopnow() {
     infinite: true,
     speed: 500,
     centerMode: true,
-    centerPadding: '15%', // Adjust this value to control the "peek"
+    centerPadding: '20%', // Adjust this value to control the "peek"
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,

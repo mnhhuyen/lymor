@@ -40,7 +40,7 @@ function Shopnew() {
     infinite: true,
     speed: 500,
     centerMode: true,
-    centerPadding: '15%', // Shows part of the adjacent slide
+    centerPadding: '20%', // Shows part of the adjacent slide
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,

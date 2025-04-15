@@ -20,7 +20,10 @@ function Home() {
     const handleScroll = () => {
         const currentScrollY = window.scrollY;
 
-        if (currentScrollY > lastScrollY) {
+        // Always show the navbar when the user is at the top of the screen
+        if (currentScrollY === 0) {
+            setShowNavbar(true);
+        } else if (currentScrollY > lastScrollY) {
             // User is scrolling down
             setShowNavbar(false);
         } else {
@@ -37,6 +40,25 @@ function Home() {
             window.removeEventListener('scroll', handleScroll);
         };
     }, [lastScrollY]);
+
+    // Listen for any key press or any click event to show the navbar.
+    useEffect(() => {
+        const handleKeyDown = () => {
+            setShowNavbar(true);
+        };
+
+        const handleClick = () => {
+            setShowNavbar(true);
+        };
+
+        window.addEventListener('keydown', handleKeyDown);
+        window.addEventListener('click', handleClick);
+
+        return () => {
+            window.removeEventListener('keydown', handleKeyDown);
+            window.removeEventListener('click', handleClick);
+        };
+    }, []);
 
     const toggleSearchWindow = () => {
         setIsSearchOpen(!isSearchOpen);
