@@ -8,7 +8,8 @@ const filePath = "./data/products.json";
 router.get("/newest", (req, res) => {
     try {
         const rawData = fs.readFileSync(filePath);
-        const products = JSON.parse(rawData);
+        const parsedData = JSON.parse(rawData);
+        const products = parsedData.products;
 
         // Sort products by upload_date in descending order.
         const sortedProducts = products.sort((a, b) => {
@@ -32,7 +33,8 @@ router.get("/newest", (req, res) => {
 router.get("/bestseller", (req, res) => {
     try {
         const rawData = fs.readFileSync(filePath);
-        const products = JSON.parse(rawData);
+        const parsedData = JSON.parse(rawData);
+        const products = parsedData.products;
 
         // Sort products by sold in descending order
         const sortedProducts = products.sort((a, b) => b.sold - a.sold);
@@ -60,7 +62,8 @@ router.get("/", (req, res) => {
 router.get("/:id", (req, res) => {
     try {
         const rawData = fs.readFileSync(filePath);
-        const products = JSON.parse(rawData);
+        const parsedData = JSON.parse(rawData);
+        const products = parsedData.products;
         const product = products.find((p) => p.id.toString() === req.params.id);
         if (product) res.json(product);
         else res.status(404).json({ message: "Product not found" });

@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import { Link } from 'react-router-dom'
 import dropdownData from '../data/dropdownData';
 import './Navbar.css';
 
@@ -52,9 +53,17 @@ function Navbar() {
                             onMouseEnter={() => handleMouseEnter(key)}
                             onMouseLeave={handleMouseLeave}
                         >
-                            <a href="#" className="text-black nav-link nav-text">
-                                {key}
-                            </a>
+                            {key === 'BỘ SƯU TẬP' ? (
+                                // this one goes straight to /collections
+                                <Link to="/collections" className="text-black nav-link nav-text">
+                                    {key}
+                                </Link>
+                            ) : (
+                                // everything else still behaves like before
+                                <a href="#" className="text-black nav-link nav-text">
+                                    {key}
+                                </a>
+                            )}
                         </div>
                     ))}
                 </div>
@@ -91,11 +100,21 @@ function Navbar() {
                     <div className="mobile-menu md:hidden bg-white p-4">
                         {Object.keys(dropdownData).map((key) => (
                             <div key={key} className="mb-4 border-b pb-2">
-                                <button className="text-left text-black nav-link nav-text"
-                                    onClick={() => handleMobileDropdownClick(key)}
-                                >
-                                    {key}
-                                </button>
+                                {key === 'BỘ SƯU TẬP' ? (
+                                    <Link
+                                        to="/collections"
+                                        className="text-left text-black nav-link nav-text block"
+                                    >
+                                        {key}
+                                    </Link>
+                                ) : (
+                                    <button
+                                        className="text-left text-black nav-link nav-text block"
+                                        onClick={() => handleMobileDropdownClick(key)}
+                                    >
+                                        {key}
+                                    </button>
+                                )}
                                 {activeMobileDropdown === key && (
                                     <div className="mt-2 pl-4">
                                         {dropdownData[key].map((section, index) => (

@@ -1,79 +1,165 @@
-[
-    {
-        "id": 1,
-        "name": "DCBTCC83",
-        "price": 4717000,
-        "description": "Dây chuyền Vàng 14K Ngọc trai",
-        "images": [
-            "/media/image/new-1.png"
-        ],
-        "sold": 3,
-        "upload_date": "24/03/2025"
-    },
-    {
-        "id": 2,
-        "name": "DCBTCC83",
-        "price": 4717000,
-        "description": "Dây chuyền Vàng 14K Ngọc trai",
-        "images": [
-            "/media/image/new-2.png"
-        ],
-        "sold": 3,
-        "upload_date": "24/03/2025"
-    },
-    {
-        "id": 3,
-        "name": "DCBTCC83",
-        "price": 4717000,
-        "description": "Dây chuyền Vàng 14K Ngọc trai",
-        "images": [
-            "/media/image/new-3.png"
-        ],
-        "sold": 3,
-        "upload_date": "24/03/2025"
-    },
-    {
-        "id": 4,
-        "name": "DCBTCC83",
-        "price": 4717000,
-        "description": "Dây chuyền Vàng 14K Ngọc trai",
-        "images": [
-            "/media/image/bestseller-1.png"
-        ],
-        "sold": 10,
-        "upload_date": "22/03/2025"
-    },
-    {
-        "id": 5,
-        "name": "DCBTCC83",
-        "price": 4717000,
-        "description": "Dây chuyền Vàng 14K Ngọc trai",
-        "images": [
-            "/media/image/bestseller-2.png"
-        ],
-        "sold": 9,
-        "upload_date": "22/03/2025"
-    },
-    {
-        "id": 6,
-        "name": "DCBTCC83",
-        "price": 4717000,
-        "description": "Dây chuyền Vàng 14K Ngọc trai",
-        "images": [
-            "/media/image/bestseller-3.png"
-        ],
-        "sold": 8,
-        "upload_date": "22/03/2025"
-    },
-    {
-        "id": 7,
-        "name": "DCBTCC83",
-        "price": 4717000,
-        "description": "Dây chuyền Vàng 14K Ngọc trai",
-        "images": [
-            "/media/image/bestseller-4.png"
-        ],
-        "sold": 7,
-        "upload_date": "22/03/2025"
-    }
-]
+{
+    "collections": [
+        {
+            "id": 1,
+            "name": "Bộ sưu tập mùa hè",
+            "description": "Trang sức mang phong cách mùa hè",
+            "images": [
+                "/media/image/collection-1.svg"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Bộ sưu tập cao cấp",
+            "description": "Thiết kế cao cấp, sang trọng",
+            "images": [
+                "/media/image/collection-2.svg"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Bộ sưu tập mùa đông",
+            "description": "Trang sức ấm áp cho mùa đông",
+            "images": [
+                "/media/image/collection-3.svg"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Bộ sưu tập lễ hội",
+            "description": "Trang sức lấp lánh cho dịp lễ hội",
+            "images": [
+                "/media/image/collection-4.svg"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Bộ sưu tập cao cấp",
+            "description": "Thiết kế cao cấp, sang trọng",
+            "images": [
+                "/media/image/collection-5.svg"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Bộ sưu tập mùa đông",
+            "description": "Trang sức ấm áp cho mùa đông",
+            "images": [
+                "/media/image/collection-6.svg"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Bộ sưu tập lễ hội",
+            "description": "Trang sức lấp lánh cho dịp lễ hội",
+            "images": [
+                "/media/image/collection-7.svg"
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Bộ sưu tập mùa hè",
+            "description": "Trang sức mang phong cách mùa hè",
+            "images": [
+                "/media/image/collection-8.svg"
+            ]
+        }
+    ],
+    "collections2": [
+        {
+            "id": 1,
+            "name": "Bộ sưu tập mùa hè",
+            "description": "Trang sức mang phong cách mùa hè",
+            "images": [
+                "/media/image/collection-more-1.svg"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Bộ sưu tập cao cấp",
+            "description": "Thiết kế cao cấp, sang trọng",
+            "images": [
+                "/media/image/collection-more-2.svg"
+            ]
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "name": "DCBTCC83",
+            "price": 4717000,
+            "description": "Dây chuyền Vàng 14K Ngọc trai",
+            "images": [
+                "/media/image/new-1.png"
+            ],
+            "sold": 3,
+            "upload_date": "24/03/2025"
+        },
+        {
+            "id": 2,
+            "name": "DCBTCC83",
+            "price": 4717000,
+            "description": "Dây chuyền Vàng 14K Ngọc trai",
+            "images": [
+                "/media/image/new-2.png"
+            ],
+            "sold": 3,
+            "upload_date": "24/03/2025"
+        },
+        {
+            "id": 3,
+            "name": "DCBTCC83",
+            "price": 4717000,
+            "description": "Dây chuyền Vàng 14K Ngọc trai",
+            "images": [
+                "/media/image/new-3.png"
+            ],
+            "sold": 3,
+            "upload_date": "24/03/2025"
+        },
+        {
+            "id": 4,
+            "name": "DCBTCC83",
+            "price": 4717000,
+            "description": "Dây chuyền Vàng 14K Ngọc trai",
+            "images": [
+                "/media/image/bestseller-1.png"
+            ],
+            "sold": 10,
+            "upload_date": "22/03/2025"
+        },
+        {
+            "id": 5,
+            "name": "DCBTCC83",
+            "price": 4717000,
+            "description": "Dây chuyền Vàng 14K Ngọc trai",
+            "images": [
+                "/media/image/bestseller-2.png"
+            ],
+            "sold": 9,
+            "upload_date": "22/03/2025"
+        },
+        {
+            "id": 6,
+            "name": "DCBTCC83",
+            "price": 4717000,
+            "description": "Dây chuyền Vàng 14K Ngọc trai",
+            "images": [
+                "/media/image/bestseller-3.png"
+            ],
+            "sold": 8,
+            "upload_date": "22/03/2025"
+        },
+        {
+            "id": 7,
+            "name": "DCBTCC83",
+            "price": 4717000,
+            "description": "Dây chuyền Vàng 14K Ngọc trai",
+            "images": [
+                "/media/image/bestseller-4.png"
+            ],
+            "sold": 7,
+            "upload_date": "22/03/2025"
+        }
+    ]
+}
