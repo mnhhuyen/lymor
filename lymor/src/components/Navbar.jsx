@@ -41,6 +41,13 @@ function Navbar() {
         }
     };
 
+    const directLinks = {
+    'BỘ SƯU TẬP': '/collections',
+    'SẢN PHẨM': '/products',
+    'CHÍNH SÁCH': '/policy',
+    'KHUYẾN MÃI': '/promotions',
+};
+
     return (
         <div>
             <div className="relative w-full navbar" style={{ fontFamily: 'Lora, Chivo, Arial, sans-serif' }}>
@@ -53,17 +60,15 @@ function Navbar() {
                             onMouseEnter={() => handleMouseEnter(key)}
                             onMouseLeave={handleMouseLeave}
                         >
-                            {key === 'BỘ SƯU TẬP' ? (
-                                // this one goes straight to /collections
-                                <Link to="/collections" className="text-black nav-link nav-text">
-                                    {key}
-                                </Link>
-                            ) : (
-                                // everything else still behaves like before
-                                <a href="#" className="text-black nav-link nav-text">
-                                    {key}
-                                </a>
-                            )}
+                            {directLinks[key] ? (
+                <Link to={directLinks[key]} className="text-black nav-link nav-text">
+                    {key}
+                </Link>
+            ) : (
+                <a href="#" className="text-black nav-link nav-text">
+                    {key}
+                </a>
+            )}
                         </div>
                     ))}
                 </div>
@@ -100,9 +105,8 @@ function Navbar() {
                     <div className="mobile-menu md:hidden bg-white p-4">
                         {Object.keys(dropdownData).map((key) => (
                             <div key={key} className="mb-4 border-b pb-2">
-                                {key === 'BỘ SƯU TẬP' ? (
-                                    <Link
-                                        to="/collections"
+                                {directLinks[key] ? (
+                <Link to={directLinks[key]}
                                         className="text-left text-black nav-link nav-text block"
                                     >
                                         {key}

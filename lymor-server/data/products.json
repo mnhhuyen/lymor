@@ -93,7 +93,8 @@
                 "/media/image/new-1.png"
             ],
             "sold": 3,
-            "upload_date": "24/03/2025"
+            "upload_date": "24/03/2025",
+            "collection": 1
         },
         {
             "id": 2,
@@ -104,7 +105,8 @@
                 "/media/image/new-2.png"
             ],
             "sold": 3,
-            "upload_date": "24/03/2025"
+            "upload_date": "24/03/2025",
+            "collection": 1
         },
         {
             "id": 3,
@@ -115,7 +117,8 @@
                 "/media/image/new-3.png"
             ],
             "sold": 3,
-            "upload_date": "24/03/2025"
+            "upload_date": "24/03/2025",
+            "collection": 1
         },
         {
             "id": 4,
@@ -126,7 +129,8 @@
                 "/media/image/bestseller-1.png"
             ],
             "sold": 10,
-            "upload_date": "22/03/2025"
+            "upload_date": "22/03/2025",
+            "collection": 1
         },
         {
             "id": 5,
@@ -137,7 +141,8 @@
                 "/media/image/bestseller-2.png"
             ],
             "sold": 9,
-            "upload_date": "22/03/2025"
+            "upload_date": "22/03/2025",
+            "collection": 1
         },
         {
             "id": 6,
@@ -148,7 +153,8 @@
                 "/media/image/bestseller-3.png"
             ],
             "sold": 8,
-            "upload_date": "22/03/2025"
+            "upload_date": "22/03/2025",
+            "collection": 2
         },
         {
             "id": 7,
@@ -159,7 +165,8 @@
                 "/media/image/bestseller-4.png"
             ],
             "sold": 7,
-            "upload_date": "22/03/2025"
+            "upload_date": "22/03/2025",
+            "collection": 2
         }
     ]
 }

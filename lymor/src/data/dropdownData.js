@@ -51,7 +51,7 @@ const dropdownData = {
             ],
         },
     ],
-    "DỊCH VỤ": [
+    "CHÍNH SÁCH": [
         {
             title: "Tư vấn trang sức theo mệnh",
             links: [

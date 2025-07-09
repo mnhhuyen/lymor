@@ -6,8 +6,8 @@ import '../Navbar.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-function CollectionItem() {
-  const [collections, setCollections] = useState([]);
+function ProductItem() {
+  const [products, setProducts] = useState([]);
   const [isMobile, setIsMobile] = useState(false);
 
   // Update isMobile state based on window width
@@ -22,17 +22,17 @@ function CollectionItem() {
 
   // Fetch best seller products from backend
   useEffect(() => {
-    const fetchCollections = async () => {
+    const fetchProducts = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/collections/more');
-        console.log('Fetched collections:', response.data); // Debugging line to check fetched data
-        setCollections(response.data);
+        const response = await axios.get('http://localhost:5000/api/products/');
+        console.log('Fetched products:', response.data); // Debugging line to check fetched data
+        setProducts(response.data);
       } catch (error) {
         console.error('Error fetching best seller products:', error);
       }
     };
 
-    fetchCollections();
+    fetchProducts();
   }, []);
 
   // Slider settings for mobile view with peek effect
@@ -49,23 +49,23 @@ function CollectionItem() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center bg-white bestseller-container mb-16">
-      <h1 className="nav-link bestseller-title">BỘ SƯU TẬP KHÁC</h1>
+    <div className="flex flex-col items-center justify-center bg-white bestseller-container">
+      {/* <h1 className="nav-link bestseller-title">BỘ SƯU TẬP</h1> */}
       {isMobile ? (
         // Mobile view using react-slick slider
         <Slider {...sliderSettings} className="bestseller-content">
-          {collections.map((collection) => (
-            <div key={collection.id} className="new-item relative px-1">
+          {products.map((product) => (
+            <div key={product.id} className="new-item relative px-1">
               <div className="bestseller-product">
                 <img
-                  src={collection.images[0]}
-                  alt={collection.description || "Collection image"}
+                  src={product.images[0]}
+                  alt={product.description || "product image"}
                   className="bestseller-image"
                 />
               </div>
               <div className="mt-2 text-center bestseller-info">
-                <p className="bestseller-des font-bold">{collection.description}</p>
-                <p className="bestseller-code">Mã bộ sưu tập: {collection.name}</p>
+                <p className="bestseller-des font-bold">{product.description}</p>
+                <p className="bestseller-code">Mã bộ sưu tập: {product.name}</p>
                 {/* <p className="text-gray-600 bestseller-price">
                   {new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(product.price)}
                 </p> */}
@@ -75,19 +75,19 @@ function CollectionItem() {
         </Slider>
       ) : (
         // Desktop view: Grid layout
-        <div className="bestseller-content flex justify-center flex-wrap gap-8">
-          {collections.map((collection) => (
-            <div key={collection.id} className="relative w-[600px]">
+        <div className="bestseller-content grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {products.map((product) => (
+            <div key={product.id} className="relative">
               <div className="bestseller-product">
                 <img
-                  src={collection.images[0]}
-                  alt={collection.description || "Collection image"}
-                  className="bestseller-image w-full object-cover rounded"
+                  src={product.images[0]}
+                  alt={product.description || "Product image"}
+                  className="bestseller-image"
                 />
               </div>
               <div className="mt-2 text-center bestseller-info">
-                <p className="bestseller-des font-bold">{collection.description}</p>
-                <p className="bestseller-code">Mã bộ sưu tập: {collection.name}</p>
+                <p className="bestseller-des font-bold">{product.description}</p>
+                <p className="bestseller-code">Mã bộ sưu tập: {product.name}</p>
                 {/* <p className="text-gray-600 bestseller-price">
                   {new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(product.price)}
                 </p> */}
@@ -100,4 +100,4 @@ function CollectionItem() {
   );
 }
 
-export default CollectionItem;
+export default ProductItem;

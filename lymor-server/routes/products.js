@@ -52,7 +52,8 @@ router.get("/bestseller", (req, res) => {
 router.get("/", (req, res) => {
     try {
         const rawData = fs.readFileSync(filePath);
-        const products = JSON.parse(rawData);
+        const parsedData = JSON.parse(rawData);
+        const products = parsedData.products;
         res.json(products);
     } catch (error) {
         res.status(500).json({ message: "Error reading product data" });

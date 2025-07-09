@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import CustomerService from './pages/CustomerService';
 import RingProduct from './pages/RingProduct';
 import Collections from './pages/Collections'
+import Products from './pages/Products';
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                 <Route path="/customer-service" element={<CustomerService />} />
                 <Route path="/product" element={<RingProduct />} />
                 <Route path="/collections" element={<Collections />} />
+                <Route path="/products" element={<Products />} />
             </Routes>
         </Router>
     );
