@@ -7,6 +7,7 @@ import RingProduct from './pages/RingProduct';
 import Collections from './pages/Collections'
 import Products from './pages/Products';
 import ProductDetails from './pages/ProductDetails';
+import Policy from './pages/Policy';
 
 function App() {
     return (
@@ -18,6 +19,8 @@ function App() {
                 <Route path="/collections" element={<Collections />} />
                 <Route path="/products" element={<Products />} />
                 <Route path="/products/:id" element={<ProductDetails />} />
+                <Route path="/products/:id" element={<ProductDetails />} />
+                <Route path="/policy" element={<Policy />} />
             </Routes>
         </Router>
     );
