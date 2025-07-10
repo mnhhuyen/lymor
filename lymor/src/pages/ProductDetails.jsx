@@ -3,11 +3,9 @@ import Header from '../components/Header';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import SearchWindow from '../components/SearchWindow';
-import Banner from '../components/collectionpage/Banner'
-import Introduction from '../components/collectionpage/Introduction'
-import ProductItem from '../components/productpage/ProductItem'
+import ExampleProduct from '../components/product/Exampleproduct'
 
-function Products() {
+function ProductDetails() {
     const [showNavbar, setShowNavbar] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
     const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -68,13 +66,14 @@ function Products() {
             </div>
 
             <SearchWindow isOpen={isSearchOpen} onClose={toggleSearchWindow} />
-          
+
+
             <div className="mt-32"> 
-                <ProductItem />
+                <ExampleProduct />
                 <Footer />
             </div>
         </div>
     );
 }
 
-export default Products;
+export default ProductDetails;
