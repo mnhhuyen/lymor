@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import SearchWindow from '../components/SearchWindow';
+import GeneralPolicy from '../components/policypage/GeneralPolicy';
 
 function ProductDetails() {
     const [showNavbar, setShowNavbar] = useState(true);
@@ -68,6 +69,7 @@ function ProductDetails() {
 
 
             <div className="mt-32">
+                <GeneralPolicy />
                 <Footer />
             </div>
         </div>

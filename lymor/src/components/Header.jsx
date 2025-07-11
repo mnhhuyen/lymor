@@ -24,7 +24,7 @@ function Header({ onSearchClick }) {
                 </div>
 
                 <div className="col-span-6 flex items-center justify-center header-main">
-                    <img src="media/image/logo.svg" alt="Logo" className="header-logo" />
+                    <img src="/media/image/logo.svg" alt="Logo" className="header-logo" />
                     <Link to="/" className="text-logo hover:text-gray-800 ml-2 font-bold">LYMOR</Link>
                 </div>
 
