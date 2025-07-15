@@ -2,15 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import Experience from '../components/homepage/Experience';
-import Shopnow from '../components/homepage/Shopnow';
-import ShopByCate from '../components/homepage/Shopbycategory';
-import Stories from '../components/homepage/Stories';
 import SearchWindow from '../components/SearchWindow';
-import Banner from '../components/collectionpage/Banner'
-import Introduction from '../components/collectionpage/Introduction'
-import CollectionItem from '../components/collectionpage/CollectionItem'
-import CollectionItem2 from '../components/collectionpage/CollectionItem2'
+import AboutContent from '../components/aboutpage/AboutContent'
 
 function About() {
     const [showNavbar, setShowNavbar] = useState(true);
@@ -76,8 +69,8 @@ function About() {
 
             {/* video introduction*/}
 
-            <div className="md:mt-44"> {/* or use pt-16 on Vidintro itself */}
-                <Introduction />
+            <div className="md:mt-44"> 
+                <AboutContent />
             </div>
 
             {/*shop now some special item*/}
