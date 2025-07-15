@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import Slider from 'react-slick';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import '../Navbar.css';
@@ -10,29 +10,33 @@ const policies = [
   {
     label: 'TƯ VẤN TRANG SỨC\nTHEO MỆNH',
     img: '/media/image/policy-1.svg',
+    route: '/policy/consultation',
   },
   {
     label: 'CHÍNH SÁCH\nKHÁCH HÀNG THÂN THIẾT',
     img: '/media/image/policy-2.svg',
+    route: '/policy/loyalty',
   },
   {
     label: 'CHÍNH SÁCH THU ĐỔI',
     img: '/media/image/policy-3.svg',
+    route: '/policy/exchange',
   },
   {
     label: 'CHÍNH SÁCH GIAO HÀNG',
     img: '/media/image/policy-4.svg',
+    route: '/policy/shipping',
   },
   {
     label: 'CHÍNH SÁCH BẢO HÀNH',
     img: '/media/image/policy-5.svg',
+    route: '/policy/warranty',
   },
 ];
 
 function GeneralPolicy() {
-  const { tab } = useParams();
+  const location = useLocation();
   const navigate = useNavigate();
-  const selected = tab ? parseInt(tab, 10) : 0;
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -53,6 +57,9 @@ function GeneralPolicy() {
     swipeToSlide: true,
   };
 
+  // Find the selected index based on the current path
+  const selected = policies.findIndex(policy => location.pathname === policy.route);
+
   return (
     <div className="flex flex-col items-center justify-center bg-white">
       {isMobile ? (
@@ -64,7 +71,7 @@ function GeneralPolicy() {
                 className={`flex flex-col items-center justify-center w-64 h-72 p-6 rounded-3xl bg-[#f6fffd] cursor-pointer shadow transition-all duration-200
                   ${selected === idx ? 'border-2 border-[#3ed6cb]' : 'border border-transparent'}
                 `}
-                onClick={() => navigate(`/policy/${idx}`)}
+                onClick={() => navigate(policy.route)}
               >
                 <img src={policy.img} alt={policy.label} className="w-28 h-28 mb-6" />
                 <span className={`text-center text-sm whitespace-pre-line ${selected === idx ? 'text-[#3ed6cb] font-semibold' : 'text-black'}`}>
@@ -82,7 +89,7 @@ function GeneralPolicy() {
               className={`flex flex-col items-center justify-center w-64 h-72 p-6 rounded-3xl bg-[#f6fffd] cursor-pointer shadow transition-all duration-200
                 ${selected === idx ? 'border-2 border-[#3ed6cb]' : 'border border-transparent'}
               `}
-              onClick={() => navigate(`/policy/${idx}`)}
+              onClick={() => navigate(policy.route)}
             >
               <img src={policy.img} alt={policy.label} className="w-36 h-36 mb-3" />
               <span className={`text-center text-sm whitespace-pre-line ${selected === idx ? 'text-[#3ed6cb] font-semibold' : 'text-black'}`}>

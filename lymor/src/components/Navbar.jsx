@@ -42,6 +42,7 @@ function Navbar() {
     };
 
     const directLinks = {
+    'VỀ CHÚNG TÔI': '/about',
     'BỘ SƯU TẬP': '/collections',
     'SẢN PHẨM': '/products',
     'CHÍNH SÁCH': '/policy',

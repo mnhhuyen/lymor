@@ -2,20 +2,20 @@ import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Experience from '../components/homepage/Experience';
+import Shopnow from '../components/homepage/Shopnow';
+import ShopByCate from '../components/homepage/Shopbycategory';
+import Stories from '../components/homepage/Stories';
 import SearchWindow from '../components/SearchWindow';
-import GeneralPolicy from '../components/policypage/GeneralPolicy';
-import PolicyConsultation from '../components/policypage/PolicyConsultation';
-import PolicyLoyalty from '../components/policypage/PolicyLoyalty';
-import PolicyExchange from '../components/policypage/PolicyExchange';
-import PolicyShipping from '../components/policypage/PolicyShipping';
-import PolicyWarranty from '../components/policypage/PolicyWarranty';
-import { useLocation } from 'react-router-dom';
+import Banner from '../components/collectionpage/Banner'
+import Introduction from '../components/collectionpage/Introduction'
+import CollectionItem from '../components/collectionpage/CollectionItem'
+import CollectionItem2 from '../components/collectionpage/CollectionItem2'
 
-function Policy() {
+function About() {
     const [showNavbar, setShowNavbar] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
     const [isSearchOpen, setIsSearchOpen] = useState(false);
-    const location = useLocation();
 
     // Function to handle scroll detection
     const handleScroll = () => {
@@ -65,28 +65,6 @@ function Policy() {
         setIsSearchOpen(!isSearchOpen);
     };
 
-    // Render the correct policy page based on the path
-    let PolicyContent;
-    switch (location.pathname) {
-        case '/policy/consultation':
-            PolicyContent = <PolicyConsultation />;
-            break;
-        case '/policy/loyalty':
-            PolicyContent = <PolicyLoyalty />;
-            break;
-        case '/policy/exchange':
-            PolicyContent = <PolicyExchange />;
-            break;
-        case '/policy/shipping':
-            PolicyContent = <PolicyShipping />;
-            break;
-        case '/policy/warranty':
-            PolicyContent = <PolicyWarranty />;
-            break;
-        default:
-            PolicyContent = <GeneralPolicy />;
-    }
-
     return (
         <div>
             <div className={`fixed top-0 w-full z-50 transition-transform duration-300 group-header ${showNavbar ? 'transform translate-y-0' : 'transform -translate-y-full'}`}>
@@ -96,12 +74,16 @@ function Policy() {
 
             <SearchWindow isOpen={isSearchOpen} onClose={toggleSearchWindow} />
 
-            <div className="mt-32">
-                {PolicyContent}
-                <Footer />
+            {/* video introduction*/}
+
+            <div className="md:mt-44"> {/* or use pt-16 on Vidintro itself */}
+                <Introduction />
             </div>
+
+            {/*shop now some special item*/}
+            <Footer />
         </div>
     );
 }
 
-export default Policy;
+export default About;
